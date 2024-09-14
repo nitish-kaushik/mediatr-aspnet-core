@@ -1,6 +1,21 @@
-@LearningCQRSinAspNetCoreUsingMediatR_HostAddress = http://localhost:5101
+@LearningCQRSinAspNetCoreUsingMediatR_HostAddress = https://localhost:7259
 
-GET {{LearningCQRSinAspNetCoreUsingMediatR_HostAddress}}/weatherforecast/
-Accept: application/json
+GET {{LearningCQRSinAspNetCoreUsingMediatR_HostAddress}}/api/employee
+
+###
+
+POST {{LearningCQRSinAspNetCoreUsingMediatR_HostAddress}}/api/employee
+Content-Type: application/json
+
+{
+  "name": "John Doe 1",
+  "role": "Software Developer 1",
+  "email": "test@test.com"
+}
+
+###
+
+
+GET {{LearningCQRSinAspNetCoreUsingMediatR_HostAddress}}/api/employee/9e4171c8-c54a-4d1b-8bf9-bea715603cdd
 
 ###
